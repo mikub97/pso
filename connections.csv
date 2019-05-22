@@ -1,0 +1,712 @@
+1;La Defense;Esplanade de La Defense;1
+1;Esplanade de La Defense;La Defense;1
+1;Esplanade de La Defense;Pont de Neuilly;1
+1;Pont de Neuilly;Esplanade de La Defense;1
+1;Pont de Neuilly;Les Sablons;2
+1;Les Sablons;Pont de Neuilly;2
+1;Les Sablons;Porte Maillot;1
+1;Porte Maillot;Les Sablons;1
+1;Porte Maillot;Argentine;2
+1;Argentine;Porte Maillot;2
+1;Argentine;Charles de Gaulle Etoile;1
+1;Charles de Gaulle Etoile;Argentine;1
+1;Charles de Gaulle Etoile;George V;1
+1;George V;Charles de Gaulle Etoile;1
+1;George V;Franklin Roosevelt;1
+1;Franklin Roosevelt;George V;1
+1;Franklin Roosevelt;Champs Elysees Clemenceau;2
+1;Champs Elysees Clemenceau;Franklin Roosevelt;2
+1;Champs Elysees Clemenceau;Concorde;1
+1;Concorde;Champs Elysees Clemenceau;1
+1;Concorde;Tuileries;2
+1;Tuileries;Concorde;2
+1;Tuileries;Palais Royal Musee du Louvre;1
+1;Palais Royal Musee du Louvre;Tuileries;1
+1;Palais Royal Musee du Louvre;Louvre Rivoli;1
+1;Louvre Rivoli;Palais Royal Musee du Louvre;1
+1;Louvre Rivoli;Chatelet;1
+1;Chatelet;Louvre Rivoli;1
+1;Chatelet;Hotel de Ville;2
+1;Hotel de Ville;Chatelet;2
+1;Hotel de Ville;St Paul;1
+1;St Paul;Hotel de Ville;1
+1;St Paul;Bastille;2
+1;Bastille;St Paul;2
+1;Bastille;Gare de Lyon;2
+1;Gare de Lyon;Bastille;2
+1;Gare de Lyon;Reuilly Diderot;2
+1;Reuilly Diderot;Gare de Lyon;2
+1;Reuilly Diderot;Nation;1
+1;Nation;Reuilly Diderot;1
+1;Nation;Porte de Vincennes;2
+1;Porte de Vincennes;Nation;2
+1;Porte de Vincennes;Saint Mande;1
+1;Saint Mande;Porte de Vincennes;1
+1;Saint Mande;Berault;2
+1;Berault;Saint Mande;2
+1;Berault;Chateau de Vincennes;2
+1;Chateau de Vincennes;Berault;2
+2;Porte Dauphine;Victor Hugo;1
+2;Victor Hugo;Porte Dauphine;1
+2;Victor Hugo;Charles de Gaulle Etoile;2
+2;Charles de Gaulle Etoile;Victor Hugo;2
+2;Charles de Gaulle Etoile;Termes;1
+2;Termes;Charles de Gaulle Etoile;1
+2;Termes;Courcelles;1
+2;Courcelles;Termes;1
+2;Courcelles;Monceau;1
+2;Monceau;Courcelles;1
+2;Monceau;Villiers;1
+2;Villiers;Monceau;1
+2;Villiers;Rome;2
+2;Rome;Villiers;2
+2;Rome;Place de Clichy;1
+2;Place de Clichy;Rome;1
+2;Place de Clichy;Blanche;1
+2;Blanche;Place de Clichy;1
+2;Blanche;Pigalle;1
+2;Pigalle;Blanche;1
+2;Pigalle;Anvers;2
+2;Anvers;Pigalle;2
+2;Anvers;Barbes Rochechouart;1
+2;Barbes Rochechouart;Anvers;1
+2;Barbes Rochechouart;La Chapelle;2
+2;La Chapelle;Barbes Rochechouart;2
+2;La Chapelle;Stalingrad;1
+2;Stalingrad;La Chapelle;1
+2;Stalingrad;Jaures;1
+2;Jaures;Stalingrad;1
+2;Jaures;Colonnel Fabien;2
+2;Colonnel Fabien;Jaures;2
+2;Colonnel Fabien;Belleville;1
+2;Belleville;Colonnel Fabien;1
+2;Belleville;Coucouronnes;1
+2;Coucouronnes;Belleville;1
+2;Coucouronnes;Melilmontant;2
+2;Melilmontant;Coucouronnes;2
+2;Melilmontant;Pere Lachaise;1
+2;Pere Lachaise;Melilmontant;1
+2;Pere Lachaise;Philippe Auguste;2
+2;Philippe Auguste;Pere Lachaise;2
+2;Philippe Auguste;Alexandre Dumas;1
+2;Alexandre Dumas;Philippe Auguste;1
+2;Alexandre Dumas;Avron;1
+2;Avron;Alexandre Dumas;1
+2;Avron;Nation;3
+2;Nation;Avron;3
+3;Pont de Levallois Becon;Anatole France;1
+3;Anatole France;Pont de Levallois Becon;1
+3;Anatole France;Louise Michel;1
+3;Louise Michel;Anatole France;1
+3;Louise Michel;Porte de Champerret;1
+3;Porte de Champerret;Louise Michel;1
+3;Porte de Champerret;Pereire;2
+3;Pereire;Porte de Champerret;2
+3;Pereire;Wagram;1
+3;Wagram;Pereire;1
+3;Wagram;Malesherbes;1
+3;Malesherbes;Wagram;1
+3;Malesherbes;Villiers;1
+3;Villiers;Malesherbes;1
+3;Villiers;Europe;2
+3;Europe;Villiers;2
+3;Europe;Saint Lazare;1
+3;Saint Lazare;Europe;1
+3;Saint Lazare;Havre Caumartin;2
+3;Havre Caumartin;Saint Lazare;2
+3;Havre Caumartin;Opera;1
+3;Opera;Havre Caumartin;1
+3;Opera;Quatre Septembre;1
+3;Quatre Septembre;Opera;1
+3;Quatre Septembre;Bourse;1
+3;Bourse;Quatre Septembre;1
+3;Bourse;Sentier;1
+3;Sentier;Bourse;1
+3;Sentier;Reaumur Sebastopol;1
+3;Reaumur Sebastopol;Sentier;1
+3;Reaumur Sebastopol;Arts et Metiers;2
+3;Arts et Metiers;Reaumur Sebastopol;2
+3;Arts et Metiers;Temple;1
+3;Temple;Arts et Metiers;1
+3;Temple;Republique;1
+3;Republique;Temple;1
+3;Republique;Rue Saint Maur;3
+3;Rue Saint Maur;Republique;3
+3;Rue Saint Maur;Pere Lachaise;1
+3;Pere Lachaise;Rue Saint Maur;1
+3;Pere Lachaise;Gambetta;2
+3;Gambetta;Pere Lachaise;2
+3;Gambetta;Porte de Bagnolet;1
+3;Porte de Bagnolet;Gambetta;1
+3;Porte de Bagnolet;Gallieni;2
+3;Gallieni;Porte de Bagnolet;2
+3B;Porte des Lilas;Saint Fargeau;2
+3B;Saint Fargeau;Porte des Lilas;2
+3B;Saint Fargeau;Pelleport;2
+3B;Pelleport;Saint Fargeau;2
+3B;Pelleport;Gambetta;0
+3B;Gambetta;Pelleport;0
+4;Porte de Clignancourt;Simplon;2
+4;Simplon;Porte de Clignancourt;2
+4;Simplon;Marcadet Poissonniers;1
+4;Marcadet Poissonniers;Simplon;1
+4;Marcadet Poissonniers;Chateau Rouge;1
+4;Chateau Rouge;Marcadet Poissonniers;1
+4;Chateau Rouge;Barbes Rochechouart;1
+4;Barbes Rochechouart;Chateau Rouge;1
+4;Barbes Rochechouart;Gare du Nord;2
+4;Gare du Nord;Barbes Rochechouart;2
+4;Gare du Nord;Gare de l'Est;1
+4;Gare de l'Est;Gare du Nord;1
+4;Gare de l'Est;Chateau d'Eau;1
+4;Chateau d'Eau;Gare de l'Est;1
+4;Chateau d'Eau;Strasbourg St Denis;1
+4;Strasbourg St Denis;Chateau d'Eau;1
+4;Strasbourg St Denis;Reaumur Sebastopol;2
+4;Reaumur Sebastopol;Strasbourg St Denis;2
+4;Reaumur Sebastopol;Etienne Marcel;1
+4;Etienne Marcel;Reaumur Sebastopol;1
+4;Etienne Marcel;Les Halles;1
+4;Les Halles;Etienne Marcel;1
+4;Les Halles;Chatelet;1
+4;Chatelet;Les Halles;1
+4;Chatelet;Cite;1
+4;Cite;Chatelet;1
+4;Cite;Saint Michel;1
+4;Saint Michel;Cite;1
+4;Saint Michel;Odeon;1
+4;Odeon;Saint Michel;1
+4;Odeon;St Germain des Pres;1
+4;St Germain des Pres;Odeon;1
+4;St Germain des Pres;St Sulpice;2
+4;St Sulpice;St Germain des Pres;2
+4;St Sulpice;Sainte Placide;1
+4;Sainte Placide;St Sulpice;1
+4;Sainte Placide;Montparnasse Bienvenue;1
+4;Montparnasse Bienvenue;Sainte Placide;1
+4;Montparnasse Bienvenue;Vavin;1
+4;Vavin;Montparnasse Bienvenue;1
+4;Vavin;Raspail;1
+4;Raspail;Vavin;1
+4;Raspail;Denfert Rochereau;1
+4;Denfert Rochereau;Raspail;1
+4;Denfert Rochereau;Mouton Duvernet;1
+4;Mouton Duvernet;Denfert Rochereau;1
+4;Mouton Duvernet;Alesia;1
+4;Alesia;Mouton Duvernet;1
+4;Alesia;Porte d'Orleans;1
+4;Porte d'Orleans;Alesia;1
+5;Bobigny Pablo Picasso;Bobigny Pantin Raymond Queneau;5
+5;Bobigny Pantin Raymond Queneau;Bobigny Pablo Picasso;5
+5;Bobigny Pantin Raymond Queneau;Eglise de Pantin;2
+5;Eglise de Pantin;Bobigny Pantin Raymond Queneau;2
+5;Eglise de Pantin;Hoche;1
+5;Hoche;Eglise de Pantin;1
+5;Hoche;Porte de Pantin;2
+5;Porte de Pantin;Hoche;2
+5;Porte de Pantin;Ourcq;1
+5;Ourcq;Porte de Pantin;1
+5;Ourcq;Laumiere;2
+5;Laumiere;Ourcq;2
+5;Laumiere;Jaures;1
+5;Jaures;Laumiere;1
+5;Jaures;Stalingrad;1
+5;Stalingrad;Jaures;1
+5;Stalingrad;Gare du Nord;2
+5;Gare du Nord;Stalingrad;2
+5;Gare du Nord;Gare de l'Est;2
+5;Gare de l'Est;Gare du Nord;2
+5;Gare de l'Est;Jacques Bonsergent;2
+5;Jacques Bonsergent;Gare de l'Est;2
+5;Jacques Bonsergent;Republique;2
+5;Republique;Jacques Bonsergent;2
+5;Republique;Oberkampf;1
+5;Oberkampf;Republique;1
+5;Oberkampf;Richard Lenoir;2
+5;Richard Lenoir;Oberkampf;2
+5;Richard Lenoir;Breguet Sabin;1
+5;Breguet Sabin;Richard Lenoir;1
+5;Breguet Sabin;Bastille;1
+5;Bastille;Breguet Sabin;1
+5;Bastille;Quai de la Rapee;2
+5;Quai de la Rapee;Bastille;2
+5;Quai de la Rapee;Gare d'Austerlitz;2
+5;Gare d'Austerlitz;Quai de la Rapee;2
+5;Gare d'Austerlitz;Saint Marcel;1
+5;Saint Marcel;Gare d'Austerlitz;1
+5;Saint Marcel;Campo Formio;1
+5;Campo Formio;Saint Marcel;1
+5;Campo Formio;Place d'Italie;1
+5;Place d'Italie;Campo Formio;1
+6;Charles de Gaulle Etoile;Kleber;1
+6;Kleber;Charles de Gaulle Etoile;1
+6;Kleber;Boissiere;1
+6;Boissiere;Kleber;1
+6;Boissiere;Trocadero;1
+6;Trocadero;Boissiere;1
+6;Trocadero;Passy;1
+6;Passy;Trocadero;1
+6;Passy;Bir Hakeim;1
+6;Bir Hakeim;Passy;1
+6;Bir Hakeim;Dupleix;1
+6;Dupleix;Bir Hakeim;1
+6;Dupleix;La Motte Picquet Grenelle;1
+6;La Motte Picquet Grenelle;Dupleix;1
+6;La Motte Picquet Grenelle;Cambrone;1
+6;Cambrone;La Motte Picquet Grenelle;1
+6;Cambrone;Sevres Lecourbe;1
+6;Sevres Lecourbe;Cambrone;1
+6;Sevres Lecourbe;Pasteur;1
+6;Pasteur;Sevres Lecourbe;1
+6;Pasteur;Montparnasse Bienvenue;2
+6;Montparnasse Bienvenue;Pasteur;2
+6;Montparnasse Bienvenue;Edgar Quinet;1
+6;Edgar Quinet;Montparnasse Bienvenue;1
+6;Edgar Quinet;Raspail;1
+6;Raspail;Edgar Quinet;1
+6;Raspail;Denfert Rochereau;1
+6;Denfert Rochereau;Raspail;1
+6;Denfert Rochereau;Saint Jacques;2
+6;Saint Jacques;Denfert Rochereau;2
+6;Saint Jacques;Classiere;1
+6;Classiere;Saint Jacques;1
+6;Classiere;Corvisart;1
+6;Corvisart;Classiere;1
+6;Corvisart;Place d'Italie;1
+6;Place d'Italie;Corvisart;1
+6;Place d'Italie;Nationale;2
+6;Nationale;Place d'Italie;2
+6;Nationale;Chevaleret;1
+6;Chevaleret;Nationale;1
+6;Chevaleret;Quai de la Gare;1
+6;Quai de la Gare;Chevaleret;1
+6;Quai de la Gare;Bercy;1
+6;Bercy;Quai de la Gare;1
+6;Bercy;Dugommier;2
+6;Dugommier;Bercy;2
+6;Dugommier;Daumesnil;1
+6;Daumesnil;Dugommier;1
+6;Daumesnil;Bel Air;1
+6;Bel Air;Daumesnil;1
+6;Bel Air;Picpus;1
+6;Picpus;Bel Air;1
+6;Picpus;Nation;3
+6;Nation;Picpus;3
+7;La Courneuve 8 Mai 1945;Fort d'Aubervilliers;3
+7;Fort d'Aubervilliers;La Courneuve 8 Mai 1945;3
+7;Fort d'Aubervilliers;Aubervilliers Pantin Quatre chemins;2
+7;Aubervilliers Pantin Quatre chemins;Fort d'Aubervilliers;2
+7;Aubervilliers Pantin Quatre chemins;Porte de la Villette;2
+7;Porte de la Villette;Aubervilliers Pantin Quatre chemins;2
+7;Porte de la Villette;Corentin Cariou;1
+7;Corentin Cariou;Porte de la Villette;1
+7;Corentin Cariou;Crimee;1
+7;Crimee;Corentin Cariou;1
+7;Crimee;Riquet;2
+7;Riquet;Crimee;2
+7;Riquet;Stalingrad;1
+7;Stalingrad;Riquet;1
+7;Stalingrad;Louis Blanc;1
+7;Louis Blanc;Stalingrad;1
+7;Louis Blanc;Chateau Landon;2
+7;Chateau Landon;Louis Blanc;2
+7;Chateau Landon;Gare de l'Est;1
+7;Gare de l'Est;Chateau Landon;1
+7;Gare de l'Est;Poissonniere;2
+7;Poissonniere;Gare de l'Est;2
+7;Poissonniere;Cadet;1
+7;Cadet;Poissonniere;1
+7;Cadet;Le Peletier;1
+7;Le Peletier;Cadet;1
+7;Le Peletier;Chaussee d'Antin La Fayette;1
+7;Chaussee d'Antin La Fayette;Le Peletier;1
+7;Chaussee d'Antin La Fayette;Opera;2
+7;Opera;Chaussee d'Antin La Fayette;2
+7;Opera;Pyramides;1
+7;Pyramides;Opera;1
+7;Pyramides;Palais Royal Musee du Louvre;1
+7;Palais Royal Musee du Louvre;Pyramides;1
+7;Palais Royal Musee du Louvre;Pont Neuf;2
+7;Pont Neuf;Palais Royal Musee du Louvre;2
+7;Pont Neuf;Chatelet;2
+7;Chatelet;Pont Neuf;2
+7;Chatelet;Pont Marie;1
+7;Pont Marie;Chatelet;1
+7;Pont Marie;Sully Morland;1
+7;Sully Morland;Pont Marie;1
+7;Sully Morland;Jussieu;2
+7;Jussieu;Sully Morland;2
+7;Jussieu;Place Monge;2
+7;Place Monge;Jussieu;2
+7;Place Monge;Censier Daubenton;1
+7;Censier Daubenton;Place Monge;1
+7;Censier Daubenton;Les Gobelins;1
+7;Les Gobelins;Censier Daubenton;1
+7;Les Gobelins;Place d'Italie;2
+7;Place d'Italie;Les Gobelins;2
+7;Place d'Italie;Tolbiac;1
+7;Tolbiac;Place d'Italie;1
+7;Tolbiac;Maison Blanche;1
+7;Maison Blanche;Tolbiac;1
+7;Maison Blanche;Porte d'Italie;2
+7;Porte d'Italie;Maison Blanche;2
+7;Porte d'Italie;Porte de Choisy;1
+7;Porte de Choisy;Porte d'Italie;1
+7;Porte de Choisy;Porte d'Ivry;1
+7;Porte d'Ivry;Porte de Choisy;1
+7;Porte d'Ivry;Pierre Curie;2
+7;Pierre Curie;Porte d'Ivry;2
+7;Pierre Curie;Mairie d'Ivry;1
+7;Mairie d'Ivry;Pierre Curie;1
+7;Maison Blanche;Le Kremlin Bicetre;3
+7;Le Kremlin Bicetre;Maison Blanche;3
+7;Le Kremlin Bicetre;Villejuif Leo Lagrange;1
+7;Villejuif Leo Lagrange;Le Kremlin Bicetre;1
+7;Villejuif Leo Lagrange;Villejuif Paul Vaillant Couturier;2
+7;Villejuif Paul Vaillant Couturier;Villejuif Leo Lagrange;2
+7;Villejuif Paul Vaillant Couturier;Villejuif Louis Aragon;1
+7;Villejuif Louis Aragon;Villejuif Paul Vaillant Couturier;1
+7B;Louis Blanc;Jaures;1
+7B;Jaures;Louis Blanc;1
+7B;Jaures;Bolivar;1
+7B;Bolivar;Jaures;1
+7B;Bolivar;Buttes Chaumont;1
+7B;Buttes Chaumont;Bolivar;1
+7B;Buttes Chaumont;Botzaris;1
+7B;Botzaris;Buttes Chaumont;1
+7B;Botzaris;Place des Fetes;2
+7B;Place des Fetes;Pre St Gervais;2
+7B;Pre St Gervais;Danube;2
+7B;Danube;Botzaris;2
+8;Balard;Lourmel;2
+8;Lourmel;Balard;2
+8;Lourmel;Bourcicaut;1
+8;Bourcicaut;Lourmel;1
+8;Bourcicaut;Felix Faure;1
+8;Felix Faure;Bourcicaut;1
+8;Felix Faure;Commerce;1
+8;Commerce;Felix Faure;1
+8;Commerce;La Motte Picquet Grenelle;2
+8;La Motte Picquet Grenelle;Commerce;2
+8;La Motte Picquet Grenelle;Ecole Militaire;2
+8;Ecole Militaire;La Motte Picquet Grenelle;2
+8;Ecole Militaire;La Tour Maubourg;1
+8;La Tour Maubourg;Ecole Militaire;1
+8;La Tour Maubourg;Invalides;1
+8;Invalides;La Tour Maubourg;1
+8;Invalides;Concorde;2
+8;Concorde;Invalides;2
+8;Concorde;Madeleine;1
+8;Madeleine;Concorde;1
+8;Madeleine;Opera;2
+8;Opera;Madeleine;2
+8;Opera;Richelieu Drouot;1
+8;Richelieu Drouot;Opera;1
+8;Richelieu Drouot;Grands Boulevards;1
+8;Grands Boulevards;Richelieu Drouot;1
+8;Grands Boulevards;Bonne Nouvelle;1
+8;Bonne Nouvelle;Grands Boulevards;1
+8;Bonne Nouvelle;Strasbourg St Denis;1
+8;Strasbourg St Denis;Bonne Nouvelle;1
+8;Strasbourg St Denis;Republique;2
+8;Republique;Strasbourg St Denis;2
+8;Republique;Filles du Calvaire;2
+8;Filles du Calvaire;Republique;2
+8;Filles du Calvaire;Saint Sebastien Froissart;1
+8;Saint Sebastien Froissart;Filles du Calvaire;1
+8;Saint Sebastien Froissart;Chemin vert;1
+8;Chemin vert;Saint Sebastien Froissart;1
+8;Chemin vert;Bastille;1
+8;Bastille;Chemin vert;1
+8;Bastille;Ledru Rollin;1
+8;Ledru Rollin;Bastille;1
+8;Ledru Rollin;Faidherbe Chaligny;1
+8;Faidherbe Chaligny;Ledru Rollin;1
+8;Faidherbe Chaligny;Reuilly Diderot;2
+8;Reuilly Diderot;Faidherbe Chaligny;2
+8;Reuilly Diderot;Montgallet;1
+8;Montgallet;Reuilly Diderot;1
+8;Montgallet;Daumesnil;1
+8;Daumesnil;Montgallet;1
+8;Daumesnil;Michel Bizot;2
+8;Michel Bizot;Daumesnil;2
+8;Michel Bizot;Porte Doree;1
+8;Porte Doree;Michel Bizot;1
+8;Porte Doree;Porte de Charenton;1
+8;Porte de Charenton;Porte Doree;1
+8;Porte de Charenton;Liberte;2
+8;Liberte;Porte de Charenton;2
+8;Liberte;Charenton Ecoles;1
+8;Charenton Ecoles;Liberte;1
+8;Charenton Ecoles;Ecole Veterinaire Maisons Alfort;2
+8;Ecole Veterinaire Maisons Alfort;Charenton Ecoles;2
+8;Ecole Veterinaire Maisons Alfort;Maisons Alfort Stade;2
+8;Maisons Alfort Stade;Ecole Veterinaire Maisons Alfort;2
+8;Maisons Alfort Stade;Maisons Alfort Les Juilliottes;2
+8;Maisons Alfort Les Juilliottes;Maisons Alfort Stade;2
+8;Maisons Alfort Les Juilliottes;Creteil l'Echat;1
+8;Creteil l'Echat;Maisons Alfort Les Juilliottes;1
+8;Creteil l'Echat;Creteil Universite;2
+8;Creteil Universite;Creteil l'Echat;2
+8;Creteil Universite;Creteil Prefecture;2
+8;Creteil Prefecture;Creteil Universite;2
+8;Creteil Prefecture;Pointe du Lac;3
+8;Pointe du Lac;Creteil Prefecture;3
+9;Pont de Sevres;Billancourt;2
+9;Billancourt;Pont de Sevres;2
+9;Billancourt;Marcel Sembat;1
+9;Marcel Sembat;Billancourt;1
+9;Marcel Sembat;Porte de St Cloud;2
+9;Porte de St Cloud;Marcel Sembat;2
+9;Porte de St Cloud;Exelmans;2
+9;Exelmans;Porte de St Cloud;2
+9;Exelmans;Michel Ange Molitor;1
+9;Michel Ange Molitor;Exelmans;1
+9;Michel Ange Molitor;Michel Ange Auteuil;1
+9;Michel Ange Auteuil;Michel Ange Molitor;1
+9;Michel Ange Auteuil;Jasmin;2
+9;Jasmin;Michel Ange Auteuil;2
+9;Jasmin;Ranelagh;1
+9;Ranelagh;Jasmin;1
+9;Ranelagh;La Muette;1
+9;La Muette;Ranelagh;1
+9;La Muette;Rue de la Pompe;2
+9;Rue de la Pompe;La Muette;2
+9;Rue de la Pompe;Trocadero;1
+9;Trocadero;Rue de la Pompe;1
+9;Trocadero;Iena;1
+9;Iena;Trocadero;1
+9;Iena;Alma Marceau;1
+9;Alma Marceau;Iena;1
+9;Alma Marceau;Franklin Roosevelt;2
+9;Franklin Roosevelt;Alma Marceau;2
+9;Franklin Roosevelt;Saint Philippe du Roule;1
+9;Saint Philippe du Roule;Franklin Roosevelt;1
+9;Saint Philippe du Roule;Miromesnil;2
+9;Miromesnil;Saint Philippe du Roule;2
+9;Miromesnil;Saint Augustin;1
+9;Saint Augustin;Miromesnil;1
+9;Saint Augustin;Havre Caumartin;1
+9;Havre Caumartin;Saint Augustin;1
+9;Havre Caumartin;Chaussee d'Antin La Fayette;1
+9;Chaussee d'Antin La Fayette;Havre Caumartin;1
+9;Chaussee d'Antin La Fayette;Richelieu Drouot;2
+9;Richelieu Drouot;Chaussee d'Antin La Fayette;2
+9;Richelieu Drouot;Grands Boulevards;1
+9;Grands Boulevards;Richelieu Drouot;1
+9;Grands Boulevards;Bonne Nouvelle;1
+9;Bonne Nouvelle;Grands Boulevards;1
+9;Bonne Nouvelle;Strasbourg St Denis;1
+9;Strasbourg St Denis;Bonne Nouvelle;1
+9;Oberkampf;Saint Amboise;2
+9;Saint Amboise;Oberkampf;2
+9;Saint Amboise;Voltaire;1
+9;Voltaire;Saint Amboise;1
+9;Voltaire;Charonne;1
+9;Charonne;Voltaire;1
+9;Charonne;Rue des Boulets;1
+9;Rue des Boulets;Charonne;1
+9;Rue des Boulets;Nation;1
+9;Nation;Rue des Boulets;1
+9;Nation;Buzenval;2
+9;Buzenval;Nation;2
+9;Buzenval;Maraichers;1
+9;Maraichers;Buzenval;1
+9;Maraichers;Porte de Montreuil;1
+9;Porte de Montreuil;Maraichers;1
+9;Porte de Montreuil;Robespierre;2
+9;Robespierre;Porte de Montreuil;2
+9;Robespierre;Croix de Chavaux;2
+9;Croix de Chavaux;Robespierre;2
+9;Croix de Chavaux;Mairie de Montreuil;2
+9;Mairie de Montreuil;Croix de Chavaux;2
+10;Boulogne Pont de St Cloud;Boulogne Jean Jaures;2
+10;Boulogne Jean Jaures;Boulogne Pont de St Cloud;2
+10;Boulogne Jean Jaures;Michel Ange Molitor;2
+10;Michel Ange Molitor;Chardon Lagache;2
+10;Chardon Lagache;Mirabeau;1
+10;Mirabeau;Javel Andre Citroen;1
+10;Javel Andre Citroen;Charles michels;2
+10;Javel Andre Citroen;Eglise d'Auteuil;1
+10;Eglise d'Auteuil;Michel Ange Auteuil;2
+10;Michel Ange Auteuil;Porte d'Auteuil;1
+10;Porte d'Auteuil;Boulogne Jean Jaures;3
+10;Charles michels;Javel Andre Citroen;2
+10;Charles michels;Avenue Emile Zola;1
+10;Avenue Emile Zola;Charles michels;1
+10;Avenue Emile Zola;La Motte Picquet Grenelle;1
+10;La Motte Picquet Grenelle;Avenue Emile Zola;1
+10;La Motte Picquet Grenelle;Segur;2
+10;Segur;La Motte Picquet Grenelle;2
+10;Segur;Duroc;1
+10;Duroc;Segur;1
+10;Duroc;Vaneau;2
+10;Vaneau;Duroc;2
+10;Vaneau;Sevres Babylone;1
+10;Sevres Babylone;Vaneau;1
+10;Sevres Babylone;Mabillon;1
+10;Mabillon;Sevres Babylone;1
+10;Mabillon;Odeon;2
+10;Odeon;Mabillon;2
+10;Odeon;Cluny.La Sorbonne;1
+10;Cluny.La Sorbonne;Odeon;1
+10;Cluny.La Sorbonne;Maubert Mutualite;1
+10;Maubert Mutualite;Cluny.La Sorbonne;1
+10;Maubert Mutualite;Cardinal Lemoine;1
+10;Cardinal Lemoine;Maubert Mutualite;1
+10;Cardinal Lemoine;Jussieu;1
+10;Jussieu;Cardinal Lemoine;1
+10;Jussieu;Gare d'Austerlitz;3
+10;Gare d'Austerlitz;Jussieu;3
+11;Chatelet;Rambuteau;3
+11;Rambuteau;Chatelet;1
+11;Rambuteau;Arts et Metiers;1
+11;Arts et Metiers;Rambuteau;1
+11;Arts et Metiers;Republique;1
+11;Republique;Arts et Metiers;1
+11;Republique;Goncourt;2
+11;Goncourt;Republique;2
+11;Goncourt;Belleville;1
+11;Belleville;Goncourt;1
+11;Belleville;Pyrenees;1
+11;Pyrenees;Belleville;1
+11;Pyrenees;Jourdain;1
+11;Jourdain;Pyrenees;1
+11;Jourdain;Place des Fetes;1
+11;Place des Fetes;Jourdain;1
+11;Place des Fetes;Telegraphe;1
+11;Telegraphe;Place des Fetes;1
+11;Telegraphe;Porte des Lilas;2
+11;Porte des Lilas;Telegraphe;2
+11;Porte des Lilas;Mairie des Lilas;2
+11;Mairie des Lilas;Porte des Lilas;2
+12;Porte de la Chapelle;Marx Dormoy;1
+12;Marx Dormoy;Porte de la Chapelle;1
+12;Marx Dormoy;Marcadet Poissonniers;1
+12;Marcadet Poissonniers;Marx Dormoy;1
+12;Marcadet Poissonniers;Jules Joffrin;2
+12;Jules Joffrin;Marcadet Poissonniers;2
+12;Jules Joffrin;Lamarck Caulaincourt;1
+12;Lamarck Caulaincourt;Jules Joffrin;1
+12;Lamarck Caulaincourt;Abbesses;1
+12;Abbesses;Lamarck Caulaincourt;1
+12;Abbesses;Pigalle;2
+12;Pigalle;Abbesses;2
+12;Pigalle;Saint Georges;1
+12;Saint Georges;Pigalle;1
+12;Saint Georges;Notre Dame de Lorette;1
+12;Notre Dame de Lorette;Saint Georges;1
+12;Notre Dame de Lorette;Trinite d4estienne d'Orves;1
+12;Trinite d4estienne d'Orves;Notre Dame de Lorette;1
+12;Trinite d4estienne d'Orves;Saint Lazare;1
+12;Saint Lazare;Trinite d4estienne d'Orves;1
+12;Saint Lazare;Concorde;2
+12;Concorde;Saint Lazare;2
+12;Concorde;Assemblee Nationale;1
+12;Assemblee Nationale;Concorde;1
+12;Assemblee Nationale;Solferino;1
+12;Solferino;Assemblee Nationale;1
+12;Solferino;Rue du Bac;1
+12;Rue du Bac;Solferino;1
+12;Rue du Bac;Sevres Babylone;2
+12;Sevres Babylone;Rue du Bac;2
+12;Sevres Babylone;Rennes;1
+12;Rennes;Sevres Babylone;1
+12;Rennes;Notre Dame des Champs;1
+12;Notre Dame des Champs;Rennes;1
+12;Notre Dame des Champs;Montparnasse Bienvenue;1
+12;Montparnasse Bienvenue;Notre Dame des Champs;1
+12;Montparnasse Bienvenue;Falguiere;2
+12;Falguiere;Montparnasse Bienvenue;2
+12;Falguiere;Pasteur;1
+12;Pasteur;Falguiere;1
+12;Pasteur;Volontaires;1
+12;Volontaires;Pasteur;1
+12;Volontaires;Vaugirard;1
+12;Vaugirard;Volontaires;1
+12;Vaugirard;Convention;1
+12;Convention;Vaugirard;1
+12;Convention;Porte de Versailles;2
+12;Porte de Versailles;Convention;2
+12;Porte de Versailles;Corentin Celton;2
+12;Corentin Celton;Porte de Versailles;2
+12;Corentin Celton;Mairie d'Issy;2
+12;Mairie d'Issy;Corentin Celton;2
+13;Saint Denis Universite;Basilique St Denis;1
+13;Basilique St Denis;Saint Denis Universite;1
+13;Basilique St Denis;Saint Denis Porte de Paris;2
+13;Saint Denis Porte de Paris;Basilique St Denis;2
+13;Saint Denis Porte de Paris;Carrefour Pleyel;2
+13;Carrefour Pleyel;Saint Denis Porte de Paris;2
+13;Carrefour Pleyel;Mairie de St Ouen;2
+13;Mairie de St Ouen;Carrefour Pleyel;2
+13;Mairie de St Ouen;Garibaldi;2
+13;Garibaldi;Mairie de St Ouen;2
+13;Garibaldi;Porte de St Ouen;2
+13;Porte de St Ouen;Garibaldi;2
+13;Porte de St Ouen;Guy Moquet;1
+13;Guy Moquet;Porte de St Ouen;1
+13;Guy Moquet;La Fourche;2
+13;La Fourche;Guy Moquet;2
+13;La Fourche;Brochant;2
+13;Brochant;La Fourche;2
+13;La Fourche;Place de Clichy;1
+13;Place de Clichy;La Fourche;1
+13;Place de Clichy;Liege;2
+13;Liege;Place de Clichy;2
+13;Liege;Saint Lazare;1
+13;Saint Lazare;Liege;1
+13;Saint Lazare;Miromesnil;3
+13;Miromesnil;Saint Lazare;3
+13;Miromesnil;Champs Elysees Clemenceau;2
+13;Champs Elysees Clemenceau;Miromesnil;2
+13;Champs Elysees Clemenceau;Invalides;1
+13;Invalides;Champs Elysees Clemenceau;1
+13;Invalides;Varenne;2
+13;Varenne;Invalides;2
+13;Varenne;St Francois Xavier;1
+13;St Francois Xavier;Varenne;1
+13;St Francois Xavier;Duroc;1
+13;Duroc;St Francois Xavier;1
+13;Duroc;Montparnasse Bienvenue;2
+13;Montparnasse Bienvenue;Duroc;2
+13;Montparnasse Bienvenue;Gaite;1
+13;Gaite;Montparnasse Bienvenue;1
+13;Gaite;Permety;2
+13;Permety;Gaite;2
+13;Permety;Plaisance;1
+13;Plaisance;Permety;1
+13;Plaisance;Porte de Vanves;2
+13;Porte de Vanves;Plaisance;2
+13;Porte de Vanves;Malakoff Plateau de Vanves;1
+13;Malakoff Plateau de Vanves;Porte de Vanves;1
+13;Malakoff Plateau de Vanves;Malakoff Rue Etienne Dolet;2
+13;Malakoff Rue Etienne Dolet;Malakoff Plateau de Vanves;2
+13;Malakoff Rue Etienne Dolet;Chatillon Montrouge;2
+13;Chatillon Montrouge;Malakoff Rue Etienne Dolet;2
+13;Asnieres Gennevilliers Les Courtilles;Les Agnettes;1
+13;Les Agnettes;Asnieres Gennevilliers Les Courtilles;1
+13;Les Agnettes;Gabriel Peri;2
+13;Gabriel Peri;Les Agnettes;2
+13;Gabriel Peri;Mairie de Clichy;2
+13;Mairie de Clichy;Gabriel Peri;2
+13;Mairie de Clichy;Porte de Clichy;3
+13;Porte de Clichy;Mairie de Clichy;3
+13;Porte de Clichy;Brochant;1
+13;Brochant;Porte de Clichy;1
+14;Saint Lazare;Madeleine;1
+14;Madeleine;Saint Lazare;1
+14;Madeleine;Pyramides;2
+14;Pyramides;Madeleine;2
+14;Pyramides;Chatelet;2
+14;Chatelet;Pyramides;2
+14;Chatelet;Gare de Lyon;3
+14;Gare de Lyon;Chatelet;3
+14;Gare de Lyon;Bercy;2
+14;Bercy;Gare de Lyon;2
+14;Bercy;Cour Saint Emillion;1
+14;Cour Saint Emillion;Bercy;1
+14;Cour Saint Emillion;Bibliotheque Francois Mitterrand;2
+14;Bibliotheque Francois Mitterrand;Cour Saint Emillion;2
+14;Bibliotheque Francois Mitterrand;Olympiades;2
+14;Olympiades;Bibliotheque Francois Mitterrand;2
