@@ -1,0 +1,6 @@
+alpha = 1
+beta = 4
+it = 100
+ants = 100
+evaporation = 0.5
+vertices = 10
