@@ -3,8 +3,11 @@ package src;
 import java.util.List;
 
 public class Ant {
+    //lista wierzcholkow ktore odwiedzila mrowka
     public int[] way;
+    //dł. trasy
     public int wayLength;
+    //czy odwiedziła czy nie
     public boolean[] isVisited;
 
     public Ant(int vertices) {
@@ -14,6 +17,7 @@ public class Ant {
     }
 
     public void move(int vertex, int currentindex) {
+        //tu sie dzieje chodzenie mrówki
         //System.out.println(vertex + "< vertex, currentindex >" + currentindex);
         this.isVisited[vertex] = true;
         this.way[currentindex] = vertex;
@@ -30,7 +34,7 @@ public class Ant {
     }
 
     public double wayLength(double[][] graph) {
-
+        //liczenie długości trasy którą pokanała sobie mrówka
         double length;
         if (way[wayLength - 1] > way[0]) {
             length = graph[way[0]][way[wayLength - 1]];

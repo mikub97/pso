@@ -5,7 +5,7 @@ import src.PSO;
 import java.io.IOException;
 
 public class PSO {
-    public static void main(String[] args) throws IOException {
+    public static void main(String[] args) {
         new Mainframe();
     }
 }
