@@ -24,9 +24,16 @@ public class Mainframe {
     //na dole feromony
     //na diagonali zera
     private double[][] graph;
-    boolean parrarel =true;
+
+    boolean parrarel;
     public Random random;
-    public Mainframe() {
+    public Mainframe(boolean parrarel) {
+        if (parrarel){
+            System.out.println("Running parrarel PSO");
+        }
+        else
+            System.out.println("Running nonparrarel PSO");
+        this.parrarel = parrarel;
         long time0 = System.currentTimeMillis();
         Random random = new Random();
 
@@ -133,7 +140,6 @@ public class Mainframe {
             //dla każdej mrówki patrzymy na krawędzie po ktorych sb łaziła
             // i liczymy feromony na tych krawędziach
             for (Ant a : ants) {
-                System.out.println(Arrays.toString(a.way));
                 //droga od pierwszego do ostatniego
                 double contribution = a.wayLength(graph);
                 for (int i = 0; i < vertices - 1; i++) {
