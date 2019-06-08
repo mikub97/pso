@@ -1,7 +1,4 @@
-package src;
-
-
-import java.lang.reflect.Array;
+package pso;
 
 public class PSO {
     public static void main(String[] args) {
@@ -15,7 +12,7 @@ public class PSO {
                 parrarel=false;
             if (args[i].contains("properties"))
                 properties = args[i];
-            if (args[i].contains("matrix"))
+            if (args[i].equals("matrix.in"))
                 matrix=args[i];
         }
         if (properties==null) {
@@ -35,21 +32,3 @@ public class PSO {
 
     }
 }
-//    Creating random graph with 40 verticles
-//        Reading graph from : matrix.in
-//        with 40 verticles
-//        Parameters:
-//        alpha = 1.0
-//        antCount = 1200
-//        iterations= 1000
-//        beta = 4.0
-//        evaporation = 0.5
-//        vertices = 40
-//        threads_count = 2
-//
-//        Running parrarel PSO
-//        Be patient, it can take few minutes
-//        Best tour length: 1252.0
-//        Best tour order: [14, 23, 38, 27, 28, 9, 3, 11, 36, 16, 33, 19, 21, 37, 20, 34, 7, 31, 4, 18, 10, 25, 5, 26, 39, 6, 22, 13, 15, 2, 17, 30, 8, 24, 1, 12, 32, 35, 29, 0]
-//        Calculated in 101434ms
-//                      102375ms

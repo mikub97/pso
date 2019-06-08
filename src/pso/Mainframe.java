@@ -1,4 +1,4 @@
-package src;
+package pso;
 
 import java.io.*;
 import java.util.*;
@@ -55,9 +55,6 @@ public class Mainframe {
         }
         ants = new ArrayList<>();
         probabilities = new double[vertices];
-
-        randMatrix(vertices);
-
         calcs = new ArrayList<Calc>();
         for(int i=0;i<noThreads;i++)
             calcs.add(new Calc(this));
@@ -158,10 +155,10 @@ public class Mainframe {
         printParameters();
 
         if (parrarel){
-            System.out.println("\nRunning parrarel PSO");
+            System.out.println("\nRunning parrarel pso.PSO");
         }
         else
-            System.out.println("\nRunning nonparrarel PSO");
+            System.out.println("\nRunning nonparrarel pso.PSO");
 
         System.out.println("Be patient, it can take few minutes");
 
@@ -386,5 +383,30 @@ public class Mainframe {
 
     public int getVertices() {
         return vertices;
+
+    }
+
+    public void setAlpha(double alpha) {
+        this.alpha = alpha;
+    }
+
+    public void setBeta(double beta) {
+        this.beta = beta;
+    }
+
+    public void setEvaporation(double evaporation) {
+        this.evaporation = evaporation;
+    }
+
+    public void setAntCount(int antCount) {
+        this.antCount = antCount;
+    }
+
+    public void setIterations(int iterations) {
+        this.iterations = iterations;
+    }
+
+    public void setParrarel(boolean parrarel) {
+        this.parrarel = parrarel;
     }
 }
