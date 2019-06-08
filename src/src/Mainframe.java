@@ -27,17 +27,19 @@ public class Mainframe {
 
     boolean parrarel;
     public Random random;
-    public Mainframe(boolean parrarel) {
-        if (parrarel){
-            System.out.println("Running parrarel PSO");
-        }
-        else
-            System.out.println("Running nonparrarel PSO");
-        this.parrarel = parrarel;
-        long time0 = System.currentTimeMillis();
-        Random random = new Random();
 
-        try (InputStream input = new FileInputStream("properties.txt")) {
+    /**
+     * @param printMatrix : 0 nic nie wypisuje ; 1 pisze matrix na stdout ; 2 do pliku matrix.out
+     *
+     *
+     * */
+
+    public Mainframe(boolean parrarel, String propFile,int printMatrix,String matrixInFile) {
+
+        this.parrarel = parrarel;
+        random = new Random();
+
+        try (InputStream input = new FileInputStream(propFile)) {
             Properties prop = new Properties();
             prop.load(input);
             alpha = Double.parseDouble(prop.getProperty("alpha"));
@@ -54,7 +56,73 @@ public class Mainframe {
         ants = new ArrayList<>();
         probabilities = new double[vertices];
 
+        randMatrix(vertices);
 
+        calcs = new ArrayList<Calc>();
+        for(int i=0;i<noThreads;i++)
+            calcs.add(new Calc(this));
+
+        readMatrix(matrixInFile);
+
+        if (printMatrix==1)
+            printMatrix();
+        else if (printMatrix == 2)
+            printMatrixInFile();
+    }
+    public Mainframe(boolean parrarel,String properFile,int printMatrix) {
+        this.parrarel = parrarel;
+        this.random = new Random();
+        try (InputStream input = new FileInputStream(properFile)) {
+            Properties prop = new Properties();
+            prop.load(input);
+            alpha = Double.parseDouble(prop.getProperty("alpha"));
+            antCount = Integer.parseInt(prop.getProperty("ants"));
+            iterations = Integer.parseInt(prop.getProperty("it"));
+            beta = Double.parseDouble(prop.getProperty("beta"));
+            evaporation = Double.parseDouble(prop.getProperty("evaporation"));
+            vertices = Integer.parseInt(prop.getProperty("vertices"));
+            noThreads = Integer.parseInt(prop.getProperty("threads_count"));
+        } catch (IOException ex) {
+            System.out.println("Something wrong with reading the file");
+            ex.printStackTrace();
+        }
+        ants = new ArrayList<>();
+        probabilities = new double[vertices];
+
+        calcs = new ArrayList<Calc>();
+        for(int i=0;i<noThreads;i++)
+            calcs.add(new Calc(this));
+
+        randMatrix(vertices);
+
+        if (printMatrix==1)
+            printMatrix();
+        else if (printMatrix == 2)
+            printMatrixInFile();
+    }
+
+    public void readMatrix(String filename ){
+        System.out.println("Reading graph from : " +filename);
+        try {
+            BufferedReader inputStream =new BufferedReader(new FileReader(new File(filename)));
+            this.vertices =Integer.parseInt(inputStream.readLine());
+            System.out.println("with " + vertices + " verticles");
+            graph = new double[this.vertices][this.vertices];
+            for (int i = 0; i < vertices; i++) {
+                String line = inputStream.readLine();
+                String[] val = line.split("  ");
+                for (int j = 0; j < vertices; j++) {
+                    graph[i][j] = Double.parseDouble(val[j]);
+                }
+            }
+        } catch (FileNotFoundException e) {
+            e.printStackTrace();
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+    }
+    public void randMatrix(int vertices) {
+        System.out.println("Creating random graph with " + vertices + " verticles");
         graph = new double[vertices][vertices];
         //wypełniania odległościami (losowa liczba) i wartościami początkowymi feromonów - 1
         for (int i = 0; i < vertices; i++) {
@@ -64,37 +132,56 @@ public class Mainframe {
                 else if (i == j)
                     graph[i][j] = 0;
                 else
-                    graph[i][j] = Math.abs(random.nextInt(100) + 1);
+                    graph[i][j] = Math.abs(this.random.nextInt(100) + 1);
             }
         }
+    }
+    public void printParameters() {
+        System.out.println("Parameters:");
+        System.out.println("alpha = "+alpha);
+        System.out.println("antCount = "+antCount);
 
-        calcs = new ArrayList<Calc>();
-        for(int i=0;i<noThreads;i++)
-            calcs.add(new Calc(this));
-        printMatrix();
-        initializeAnts();
-        startSolving();
-        System.out.println("Time = " +(System.currentTimeMillis()-time0));
+        System.out.println("iterations= "+ iterations );
+
+        System.out.println("beta = "+ beta);
+
+        System.out.println("evaporation = " +evaporation);
+
+        System.out.println("vertices = " +vertices);
+
+        System.out.println("threads_count = " + noThreads);
     }
 
-    private void startSolving() {
+    /*********START*************/
+    public void startSolving() {
+
+        printParameters();
+
+        if (parrarel){
+            System.out.println("\nRunning parrarel PSO");
+        }
+        else
+            System.out.println("\nRunning nonparrarel PSO");
+
+        System.out.println("Be patient, it can take few minutes");
+
         //reset listy odwiedzonych miast
         resetAnts();
         //główna pętla
         for (int i = 0; i < iterations; i++) {
-            System.out.println("Iteration: " + (i+1)+".");
+//            System.out.println("Iteration: " + (i+1)+".");
             //tu mrówki sb chodzą dopóki nie obejdą wszystkich miast
             if (parrarel) {
                 for (Calc cal:calcs) {
                     cal.run();
                 }
-//                for (Calc cal:calcs) {
-//                    try {
-//                        cal.join();
-//                    } catch (InterruptedException e) {
-//                    e.printStackTrace();
-//                    }
-//                }
+                for (Calc cal:calcs) {
+                    try {
+                        cal.join();
+                    } catch (InterruptedException e) {
+                    e.printStackTrace();
+                    }
+                }
             }else
                 moveAnts();
             //po przejściu obliczamy feromony między miastami
@@ -230,19 +317,24 @@ public class Mainframe {
         return graph;
     }
 
-    private void initializeAnts() {
-        int calcIterator= 0;
-        Calc calc = calcs.get(calcIterator);
-        for (int i = 0; i < antCount; i++) {
-            Ant a = new Ant(vertices);
-            ants.add(a);
-            calc.addAnt(a);
-            calcIterator++;
-            if (calcIterator>=calcs.size())
-                    calcIterator=0;
-            calc = calcs.get(calcIterator);
-        }
+    public void initializeAnts() {
+        if (parrarel) {
+            int calcIterator = 0;
+            Calc calc = calcs.get(calcIterator);
+            for (int i = 0; i < antCount; i++) {
+                Ant a = new Ant(vertices);
+                ants.add(a);
+                calc.addAnt(a);
+                calcIterator++;
+                if (calcIterator >= calcs.size())
+                    calcIterator = 0;
+                calc = calcs.get(calcIterator);
+            }
 
+        }else
+            for (int i = 0; i < antCount; i++) {
+                ants.add(new Ant(vertices));
+            }
     }
 
     private void resetAnts() {
@@ -255,6 +347,7 @@ public class Mainframe {
         currentIndex = 0;
     }
 
+
     public void printMatrix() {
         System.out.println("Matrix:");
         for (int i = 0; i < vertices; i++) {
@@ -262,9 +355,25 @@ public class Mainframe {
                 System.out.printf(graph[i][j] + "  ");
             }
             System.out.println();
-
         }
         System.out.println("###################");
+    }
+
+    public void printMatrixInFile() {
+        try {
+            FileWriter fileWriter = new FileWriter("matrix.out");
+            fileWriter.write(vertices+"\n");
+            for (int i = 0; i < vertices; i++) {
+                for (int j = 0; j < vertices; j++) {
+                    fileWriter.write((graph[i][j] + "  "));
+                }
+                fileWriter.write("\n");
+            }
+            fileWriter.close();
+
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
     }
 
     public double getAlpha() {
