@@ -9,9 +9,14 @@ public class Mainframe {
     private int[] bestTourOrder;
     private double bestTourLength;
 
-    private double[] probabilities;
+    public void setK(boolean k) {
+        this.k = k;
+    }
 
+    private double[] probabilities;
+    private List<Calc> calcs;
     private int currentIndex;
+    int noThreads=5;
     private double alpha;
     private double beta;
     private double evaporation;
@@ -25,11 +30,12 @@ public class Mainframe {
     //na dole feromony
     //na diagonali zera
     private double[][] graph;
-
+    boolean parrarel =true;
     public Random random;
 
     public Mainframe() {
         Random random = new Random();
+
         try (InputStream input = new FileInputStream("properties.txt")) {
             Properties prop = new Properties();
             prop.load(input);
@@ -46,6 +52,7 @@ public class Mainframe {
         ants = new ArrayList<>();
         probabilities = new double[vertices];
 
+
         graph = new double[vertices][vertices];
         //wypełniania odległościami (losowa liczba) i wartościami początkowymi feromonów - 1
         for (int i = 0; i < vertices; i++) {
@@ -58,22 +65,10 @@ public class Mainframe {
                     graph[i][j] = Math.abs(random.nextInt(100) + 1);
             }
         }
-         /*//graf do testowania - min. odległość to 150, zmien w properties ilość wierzcholkow na 4!
-        for (int i = 0; i < vertices; i++) {
-            for (int j = 0; j < vertices; j++) {
-                if (i > j)
-                    graph[i][j] = 1;
-                else if (i == j)
-                    graph[i][j] = 0;
 
-                graph[0][1] = 20;
-                graph[0][2] = 10;
-                graph[0][3] = 50;
-                graph[1][2] = 30;
-                graph[1][3] = 60;
-                graph[2][3] = 80;
-            }
-        }*/
+        calcs = new ArrayList<Calc>();
+        for(int i=0;i<noThreads;i++)
+            calcs.add(new Calc(this));
         printMatrix();
         initializeAnts();
         startSolving();
@@ -87,7 +82,19 @@ public class Mainframe {
             k=true;
             System.out.println("Iteration: " + (i+1)+".");
             //tu mrówki sb chodzą dopóki nie obejdą wszystkich miast
-            moveAnts();
+            if (parrarel) {
+                for (Calc cal:calcs) {
+                    cal.run();
+                }
+                for (Calc cal:calcs) {
+                    try {
+                        cal.join();
+                    } catch (InterruptedException e) {
+                    e.printStackTrace();
+                    }
+                }
+            }else
+                moveAnts();
             //po przejściu obliczamy feromony między miastami
             updateWays();
             //znajdujemy najlepszą trasę w iteracji
@@ -99,7 +106,7 @@ public class Mainframe {
         }
         System.out.println("Best tour length: " + (bestTourLength));
         System.out.println("Best tour order: " + Arrays.toString(bestTourOrder));
-
+    return;
 
     }
 
@@ -130,7 +137,6 @@ public class Mainframe {
         //dla każdej mrówki patrzymy na krawędzie po ktorych sb łaziła
         // i liczymy feromony na tych krawędziach
         for (Ant a : ants) {
-            //printMatrix();
             System.out.println(Arrays.toString(a.way));
             //droga od pierwszego do ostatniego
             double contribution = a.wayLength(graph);
@@ -151,8 +157,13 @@ public class Mainframe {
             System.out.println("contriburion" + contribution);
         }
     }
+    private void moveAntsParrarel() {
+        for(int i=0;i<calcs.size();i++) {
+            calcs.get(i).moveAnts();
+        }
+    }
     private void moveAnts() {
-        //ruszamy wszystkie mrówki przez wszystkie krawędzie
+        //        //ruszamy wszystkie mrówki przez wszystkie krawędzie
         for (int i = currentIndex; i < vertices - 1; i++) {
             for (int j = 0; j < ants.size(); j++) {
                 //zmiana wierzchołka
@@ -166,8 +177,6 @@ public class Mainframe {
             //zwiększamy index bo kolejne miasto
             currentIndex++;
         }
-
-
     }
 
     private int pickNextVertex(Ant ant) {
@@ -228,9 +237,22 @@ public class Mainframe {
 
     }
 
+
+    public double[][] getGraph() {
+        return graph;
+    }
+
     private void initializeAnts() {
+        int calcIterator= 0;
+        Calc calc = calcs.get(calcIterator);
         for (int i = 0; i < antCount; i++) {
-            ants.add(new Ant(vertices));
+            Ant a = new Ant(vertices);
+            ants.add(a);
+            calc.addAnt(a);
+            calcIterator++;
+            if (calcIterator>=calcs.size())
+                    calcIterator=0;
+            calc = calcs.get(calcIterator);
         }
 
     }
@@ -255,5 +277,65 @@ public class Mainframe {
 
         }
         System.out.println("###################");
+    }
+
+    public boolean isK() {
+        return k;
+    }
+
+    public int[] getBestTourOrder() {
+        return bestTourOrder;
+    }
+
+    public double getBestTourLength() {
+        return bestTourLength;
+    }
+
+    public double[] getProbabilities() {
+        return probabilities;
+    }
+
+    public List<Calc> getCalcs() {
+        return calcs;
+    }
+
+    public int getCurrentIndex() {
+        return currentIndex;
+    }
+
+    public int getNoThreads() {
+        return noThreads;
+    }
+
+    public double getAlpha() {
+        return alpha;
+    }
+
+    public double getBeta() {
+        return beta;
+    }
+
+    public double getEvaporation() {
+        return evaporation;
+    }
+
+    public int getVertices() {
+        return vertices;
+    }
+
+    public int getAntCount() {
+        return antCount;
+    }
+
+    public int getIterations() {
+        return iterations;
+    }
+
+    public ArrayList<Ant> getAnts() {
+        return ants;
+    }
+
+    public Random getRandom() {
+        return random;
     }
 }
