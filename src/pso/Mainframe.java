@@ -66,6 +66,30 @@ public class Mainframe {
         else if (printMatrix == 2)
             printMatrixInFile();
     }
+    public Mainframe(boolean parrarel, Map prop,int printMatrix,String matrixInFile) {
+
+        this.parrarel = parrarel;
+        random = new Random();
+        antCount = (int) prop.get("ants");
+        alpha = (double )prop.get("alpha");
+        iterations = (int)prop.get("it");
+        beta = (double )prop.get("beta");
+        evaporation =(double)prop.get("evaporation");
+        vertices =(int)prop.get("vertices");
+        noThreads = (int) prop.get("threads_count");
+        ants = new ArrayList<>();
+        probabilities = new double[vertices];
+        calcs = new ArrayList<Calc>();
+        for(int i=0;i<noThreads;i++)
+            calcs.add(new Calc(this));
+
+        readMatrix(matrixInFile);
+
+        if (printMatrix==1)
+            printMatrix();
+        else if (printMatrix == 2)
+            printMatrixInFile();
+    }
     public Mainframe(boolean parrarel,String properFile,int printMatrix) {
         this.parrarel = parrarel;
         this.random = new Random();
@@ -408,5 +432,33 @@ public class Mainframe {
 
     public void setParrarel(boolean parrarel) {
         this.parrarel = parrarel;
+    }
+
+    public int[] getBestTourOrder() {
+        return bestTourOrder;
+    }
+
+    public double getBestTourLength() {
+        return bestTourLength;
+    }
+
+    public int getNoThreads() {
+        return noThreads;
+    }
+
+    public double getEvaporation() {
+        return evaporation;
+    }
+
+    public int getAntCount() {
+        return antCount;
+    }
+
+    public int getIterations() {
+        return iterations;
+    }
+
+    public boolean isParrarel() {
+        return parrarel;
     }
 }
