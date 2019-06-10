@@ -1,8 +1,8 @@
-alpha = 0.4
-beta = 4
-it = 50
-ants = 10
+alpha = 0.1
+beta = 1
+it = 1000
+ants = 1000
 evaporation = 0.4
-vertices = 40
-threads_count = 2
+vertices = 5
+threads_count = 4
 

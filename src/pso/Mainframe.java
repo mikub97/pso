@@ -6,7 +6,7 @@ import java.util.*;
 public class Mainframe {
     private int[] bestTourOrder;
     private double bestTourLength;
-
+    GraphDrawer graphDrawer;
     private double[] probabilities;
     private List<Calc> calcs;
     private int currentIndex;
@@ -109,7 +109,8 @@ public class Mainframe {
         }
         ants = new ArrayList<>();
         probabilities = new double[vertices];
-
+        graphDrawer = new GraphDrawer();
+        graphDrawer.generateCoords(vertices);
         calcs = new ArrayList<Calc>();
         for(int i=0;i<noThreads;i++)
             calcs.add(new Calc(this));
@@ -143,8 +144,9 @@ public class Mainframe {
         }
     }
     public void randMatrix(int vertices) {
-        System.out.println("Creating random graph with " + vertices + " verticles");
+        System.out.println("Creating random graph with " + vertices + " vertices");
         graph = new double[vertices][vertices];
+
         //wypełniania odległościami (losowa liczba) i wartościami początkowymi feromonów - 1
         for (int i = 0; i < vertices; i++) {
             for (int j = 0; j < vertices; j++) {
@@ -153,9 +155,10 @@ public class Mainframe {
                 else if (i == j)
                     graph[i][j] = 0;
                 else
-                    graph[i][j] = Math.abs(this.random.nextInt(100) + 1);
+                    graph[i][j] = graphDrawer.getDistance(i,j);
             }
         }
+        printMatrix();
     }
     public void printParameters() {
         System.out.println("Parameters:");
@@ -174,7 +177,7 @@ public class Mainframe {
     }
 
     /*********START*************/
-    public void startSolving() {
+    public void startSolving() throws IOException {
 
         printParameters();
 
@@ -203,8 +206,9 @@ public class Mainframe {
                     e.printStackTrace();
                     }
                 }
-            }else
+            }else {
                 moveAnts();
+            }
             //po przejściu obliczamy feromony między miastami
             updateWays();
             //znajdujemy najlepszą trasę w iteracji
@@ -216,6 +220,7 @@ public class Mainframe {
         }
         System.out.println("Best tour length: " + (bestTourLength));
         System.out.println("Best tour order: " + Arrays.toString(bestTourOrder));
+        graphDrawer.drawResult(bestTourOrder);
     return;
 
     }
